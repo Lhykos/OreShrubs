@@ -15,9 +15,9 @@ I will add the source code until I feel good about it to make it public. :D
 
 ### License 
 
-The project is licensed under the **GPLv3**.
+All Rights Reserved.
 
-You find a copy of that license in this repository.
+As I say, if I upload the source code this project will get a open source license.
 
 ### Modpacks
 
