@@ -24,5 +24,5 @@ As I say, if I upload the source code this project will get a open source licens
 You can use this mod in any modpacks.
 
 
-[1]: #
-[2]: #
+[1]: https://mods.curse.com/mc-mods/minecraft/263884-ore-shrubs
+[2]: http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/2808558-1-10-2-1-0-0-ore-shrubs
