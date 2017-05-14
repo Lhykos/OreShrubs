@@ -1,0 +1,49 @@
+{
+  "custom_shrubs": [
+    {
+      "enabled": true,
+      "material_name": "diamond",
+      "material_prefix": "GEM",
+      "rarity": 5,
+      "shrub_color": "0x35e8f2",
+      "berry_color": "0x35e8f2",
+      "grow_chance": 1,
+      "max_harvested_berries": 20,
+      "light_level": 4,
+      "max_grow_light": 15,
+      "grow_block": "minecraft:obsidian",
+      "generation_settings": {
+        "dimension": 0,
+        "min_generation_height": 15,
+        "max_generation_height": 60,
+        "vein_size": 5,
+        "vein_shape": "NORMAL",
+        "spawn_biomes": [
+          "minecraft:mesa",
+          "minecraft:desert",
+          "minecraft:plains"
+        ]
+      }
+    },
+    {
+      "enabled": true,
+      "material_name": "coal",
+      "material_prefix": "CUSTOM",
+      "custom_prefix": "ore",
+      "recipe_pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "rarity": 10,
+      "shrub_color": "7527324",
+      "berry_color": "16777215",
+      "growth_chance": 30,
+      "max_harvested_berries": 64,
+      "light_level": 15,
+      "max_grow_light": 15,
+      "grow_block": "minecraft:grass",
+      "generation_settings": {}
+    }
+  ]
+}
