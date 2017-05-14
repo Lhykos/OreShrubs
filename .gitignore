@@ -1,0 +1,20 @@
+# Exclude All... #
+/*
+
+# ...But Keep Important Stuff #
+
+# Gradle #
+#!gradle/
+#!gradlew
+#!gradlew.bat
+#!gradle.properties
+#!build.gradle
+
+# Github #
+!.gitignore
+!LICENCE
+!README.md
+!CHANGELOG.txt
+
+# Source #
+#!src/
