@@ -1,3 +1,8 @@
+### 1.2.1 ###
+- Removed trash loot tables from loot bags, they now should contain more good stuff!
+- RandomShrubs can now be stacked in the world.
+- FIXED! Advanced LootBags are now craftable.
+
 ### 1.2.0 ###   -   RandomConfig Update!
 - ADDED advanced config settings for OreShrubs. (Density, GenHeight, VeinSize, ...)
 - ADDED forgotten shrines to the world generation. A RandomShrub will be generated inside them.
