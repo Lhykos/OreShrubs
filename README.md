@@ -8,10 +8,6 @@ If you have any suggestions you can use the **issues tab** or the Minecraft Foru
 
 ---
 
-### Source Code
-
-I will add the source code until I feel good about it to make it public. :D
-
 ### Translation
 
 If you want to help me out with the translation of my mod, please use this table: [Translations][3]
