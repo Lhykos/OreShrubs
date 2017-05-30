@@ -14,7 +14,7 @@
 !.gitignore
 !LICENCE
 !README.md
-!CHANGELOG.txt
+!CHANGELOG.md
 
 # Source #
 #!src/
