@@ -1,4 +1,4 @@
-# OreShrubs
+# OreShrubs [![Curse Forge](http://cf.way2muchnoise.eu/full_263884_downloads.svg)](https://minecraft.curseforge.com/projects/ore-shrubs) [![Curse Forge](http://cf.way2muchnoise.eu/versions/263884.svg)](https://minecraft.curseforge.com/projects/ore-shrubs)
 
 For more information about this mod visit it on [Curse][1] or in the [Minecraft Forum][2].
 
@@ -10,11 +10,21 @@ If you have any suggestions you can use the **issues tab** or the Minecraft Foru
 
 ### Translation
 
-If you want to help me out with the translation of my mod, please use this table: [Translations][3]
+If you want to help me with the translation of this mod, you can create a pull request with the changes, or you contact me.
+I do not use the translation table anymore.
+
+### API
+
+I will bring the API soon to maven. So you can include it easier in your projects.
 
 ### License 
 
-All Rights Reserved.
+OreShrubs-Licence.
+
+## Contact
+
+You can contact me here on GitHub, the Curse Project Site or on the Minecraft Forum Thread.
+You send send me a E-Mail: lhykos@gmail.com too if you want! :)
 
 ### Modpacks
 

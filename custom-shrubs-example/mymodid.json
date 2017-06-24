@@ -2,16 +2,19 @@
   "custom_shrubs": [
     {
       "enabled": true,
-      "material_name": "diamond",
-      "material_prefix": "GEM",
+      "registry_name": "diamond",
       "rarity": 5,
+      "crafting_result": {
+        "item_name": "gemDiamond",
+        "crafting_amount": 2,
+        "recipe_pattern": "GEM"
+      },
       "shrub_color": "0x35e8f2",
       "berry_color": "0x35e8f2",
-      "grow_chance": 1,
+      "growth_chance": 1,
       "max_harvested_berries": 20,
       "light_level": 4,
-      "max_grow_light": 15,
-      "grow_block": "minecraft:obsidian",
+      "max_growth_light": 15,
       "generation_settings": {
         "dimension": 0,
         "min_generation_height": 15,
@@ -27,22 +30,20 @@
     },
     {
       "enabled": true,
-      "material_name": "coal",
-      "material_prefix": "CUSTOM",
-      "custom_prefix": "ore",
-      "recipe_pattern": [
-        "###",
-        "# #",
-        "###"
-      ],
-      "rarity": 10,
+      "registry_name": "command_block",
+      "rarity": 5,
+      "crafting_result": {
+        "item_name": "minecraft:command_block",
+        "crafting_amount": 22,
+        "custom_recipe_pattern": [ "S*#", "#*S", "S#*" ]
+      },
       "shrub_color": "7527324",
       "berry_color": "16777215",
-      "growth_chance": 30,
-      "max_harvested_berries": 64,
+      "growth_chance": 20,
+      "max_harvested_berries": 32,
       "light_level": 15,
-      "max_grow_light": 15,
-      "grow_block": "minecraft:grass",
+      "max_growth_light": 15,
+      "growth_block": "minecraft:obsidian",
       "generation_settings": {}
     }
   ]

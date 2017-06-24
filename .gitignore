@@ -12,12 +12,15 @@
 
 # Github #
 !.gitignore
-!LICENCE
+!LICENSE.md
 !README.md
-!CHANGELOG.txt
+!Changelog.md
 
 # Source #
 #!src/
+!src/main/java/lhykos/oreshrubs/api/
+!src/main/resources/
 
 # Mod Specific #
 !custom-shrubs-example
+!HOWTO-CustomShrubs.md
