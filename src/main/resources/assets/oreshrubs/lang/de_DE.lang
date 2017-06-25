@@ -1,0 +1,44 @@
+# CREATIVE TAB #
+itemGroup.oreshrubs=Erz Sträucher
+
+# ORESHRUBS #
+oreshrubs:oreshrub_burned.info=Dieser Strauch sieht sehr zerbrechlich aus.
+oreshrubs:shrubtrap.info=Das ist das pure Böse!
+oreshrubs:shrubtrap.info.undead=Gegen Untote
+oreshrubs:shrubtrap.info.arthropod=Gegen Gliederfüßer
+oreshrubs:shrubtrap.other=Gegen Andere
+oreshrubs:shrubtrap.fire=Feuer Schaden
+
+# VARIANTS #
+oreshrubs:variant.experience=Erfahrungs
+
+# ITEMS #
+item.oreshrubs:oreberry.name=Erz Beeren
+item.oreshrubs:oreberries_random.name=Zufalls Beeren
+item.oreshrubs:lootbag.name=Beute Beutel
+
+# BLOCKS #
+tile.oreshrubs:oreshrub.name=Erz Strauch
+tile.oreshrubs:shrubtrap.name=Strauchfalle
+tile.oreshrubs:oreshrub_burned.name=Verbrannter Erz Strauch
+tile.oreshrubs:oreshrub_random.name=Zufalls Strauch
+
+# DAMAGE SOURCE #
+death.attack.oreshrub=1$s fiel in einen Erz Strauch. Autsch!
+death.attack.oreshrub.player=%2$s schubste %1$s in einen Erz Strauch.
+death.attack.oreshrub.trap=%1$s wurde von einer Strauch Falle getötet.
+
+# WAILA #
+oreshrubs:waila.enchantments=Verzauberungen
+
+# JEI #
+jei.tile.oreshrubs:oreshrub_burned=Du kannst aus einen kleinen Erz Strauch einen verbrannten Erz Strauch machen indem du ihn mit einem Feuerzeug anzündest.
+jei.tile.oreshrubs:shrubtrap=Diese Strauch Falle greift alle Kreaturen an die mit ihm in Berührung kommen. Du kannst die Falle mit Plünderung, Verbrennung und einer Schadensverzauberung wie z.B. Schärfe verzaubern. Die Falle hat auch die Chance Schädel und extra Erfahrungspunkte fallen zu lassen, wenn sie mindestens Plünderung I besitzt.
+jei.tile.oreshrubs:oreshrub_random=Du kannst diesen Strauch in einem vergessenen Schrein in der Oberwelt finden, aber sei vorsichtig, einige von ihnen sind gefährlich!
+
+# LOOTBAG VARIANTS #
+oreshrubs:lootbag.advanced=Fortgeschritten
+oreshrubs:lootbag.choose.one=Bekomme ein zufälliges Item!
+oreshrubs:lootbag.choose.multiple=Wähle bis zu drei items, aber wähle weise!
+oreshrubs:lootbag.loot=Beute
+oreshrubs:lootbag.contains=Enthält

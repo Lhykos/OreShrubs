@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+	"model": "oreshrubs:flat",
+	"textures": {
+	  "particle": "#tex",
+	  "tex": "oreshrubs:blocks/shrub_withered"
+	},
+	"transform": "forge:default-block"
+  },
+	"variants": {
+	"normal":[{}],
+	"inventory":[{}]
+  }
+}

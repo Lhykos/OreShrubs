@@ -4,11 +4,11 @@
 # ...But Keep Important Stuff #
 
 # Gradle #
-#!gradle/
-#!gradlew
-#!gradlew.bat
-#!gradle.properties
-#!build.gradle
+!gradle/
+!gradlew
+!gradlew.bat
+!gradle.properties
+!build.gradle
 
 # Github #
 !.gitignore
@@ -17,10 +17,11 @@
 !Changelog.md
 
 # Source #
-#!src/
+!src/
+src/main/java/lhykos/lib/
+src/main/java/lhykos/oreshrubs/*
 !src/main/java/lhykos/oreshrubs/api/
-!src/main/resources/
 
 # Mod Specific #
-!custom-shrubs-example
+!custom-shrubs-example/
 !HOWTO-CustomShrubs.md
