@@ -44,7 +44,7 @@ oreshrubs:waila.info.enchantments=Enchantments
 jei.tile.oreshrubs:oreshrub_withered=You can turn a tiny ore shrub in a withered one, if you light it with 'Flint and Steel'. Poor little shrub!
 jei.tile.oreshrubs:shrubtrap=This shrub trap damages all entities that comes in contact with it. It also have a chance to drop Skulls and additional experience if it enchant with at least Looting I. The wither proof variant can not be destroyed by the Wither Boss.
 jei.tile.oreshrubs:oreshrub_random=You can find this shrub in a forgotten shrine which can be found in the overworld. You will recognize them if you see them, but be careful, some of these are dangerous.
-jei.item.oreshrubs:growing_powder=Right click a shrub to speed up it's growth, but only if the light level is acceptable. It's not that effective when the shrub is fully grown. Can also be used as normal Bonemeal.
+jei.item.oreshrubs:shrub_fertilizer=Right click a shrub to speed up it's growth, but only if the light level is acceptable. It's not that effective when the shrub is fully grown. It has the same effect as Bonemeal, too.
 
 # LOOTBAG VARIANTS #
 oreshrubs:lootbag.info.advanced=Advanced

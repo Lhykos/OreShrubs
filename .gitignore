@@ -18,7 +18,6 @@
 
 # Source #
 !src/
-src/main/java/lhykos/lib/
 src/main/java/lhykos/oreshrubs/*
 !src/main/java/lhykos/oreshrubs/api/
 

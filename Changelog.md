@@ -1,4 +1,10 @@
 # 1.11.2
+# OreShrubs - 1.3.2
+- FIX: JEI Tooltip for 'Shrub Fertilizer' is not shown translated.
+- FIX: ItemStack get a empty NBTTagCompound when placing them in the crafting grid.
+- FIX: German is not translated.
+- Have to remove old translations. (ru_RU, and pt_PT) They are to outdated. Sorry! :/
+
 # OreShrubs - 1.3.1
 - Shrubs that can be found in the overworld now can be re-placed on every solid block.
   - Or every custom block that has set no 'growth_block'.
@@ -9,6 +15,7 @@
 - Added 'Shrub Fertilizer'. Right click a shrub to speed up the growing. Has a less efficiency when it's fully grown.
 - Added a wither proof ShrubTrap. It's crafted with 4 wither skulls and 4 obsidian around a normal shrub trap.
 - Added 'Compressed OreBerries', they are used to craft the ore block of this variant. (Can be disabled in config.)
+- Added 'Shrub-Collector'-Villager. He spawns in a new house in a village.
 - Changed ShrubTrap Recipe. All skulls can be used for crafting. If the forgotten Shrines are disabled the random berries are replaced with experience berries.
 - Changed LootBag recipes. They now need a 'Empty Bag' for crafting.
 - Changed the loot from LootBags. From a normal one you get now 3 random items. From a advanced from the whole bag content.
