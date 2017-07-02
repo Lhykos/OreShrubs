@@ -1,4 +1,8 @@
 # 1.11.2
+# OreShrubs - 1.3.3 #
+- Some mobs have now a chance to drop a LootBag.
+  - The EnderDragon and the Wither always drop a advanced LootBag.
+
 # OreShrubs - 1.3.2
 - FIX: JEI Tooltip for 'Shrub Fertilizer' is not shown translated.
 - FIX: ItemStack get a empty NBTTagCompound when placing them in the crafting grid.
