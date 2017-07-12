@@ -1,5 +1,10 @@
 # 1.11.2
-# OreShrubs - 1.3.3 #
+# OreShrubs - 1.3.4
+- Update to Forge version: forge-1.11.2-13.20.1.2386
+- FIX: Dupe-Bug: Place a LootBag inside a "ExtraUtilities-Mechanical User" will generate unlimited loot.
+  - Should be fixed for all "auto-right-click-things". 
+
+# OreShrubs - 1.3.3
 - Some mobs have now a chance to drop a LootBag.
   - The EnderDragon and the Wither always drop a advanced LootBag.
 
