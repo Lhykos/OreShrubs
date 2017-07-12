@@ -1,0 +1,55 @@
+# CREATIVE TAB #
+itemGroup.oreshrubs=Erz Sträucher
+
+# ORESHRUBS #
+oreshrubs:oreshrub_withered.info=Dieser Strauch sieht sehr zerbrechlich aus.
+
+oreshrubs:shrubtrap.info=Das ist das pure Böse!
+oreshrubs:shrubtrap.info2=Wither resistent!
+oreshrubs:shrubtrap.dmg.undead=Gegen Untote
+oreshrubs:shrubtrap.dmg.arthropod=Gegen Gliederfüßer
+oreshrubs:shrubtrap.dmg.other=Gegen Andere
+oreshrubs:shrubtrap.dmg.fire=Feuer Schaden
+
+# VARIANTS #
+oreshrubs:variant.experience=Erfahrungs
+
+# ITEMS #
+item.oreshrubs:oreberries.name=Erz Beeren
+item.oreshrubs:oreberries_compressed.name=Komprimierte
+item.oreshrubs:oreberries_random.name=Zufalls Beeren
+item.oreshrubs:lootbag.name=Beute Beutel
+item.oreshrubs:empty_bag.name=Leerer Beutel
+item.oreshrubs:shrub_fertilizer.name=Strauch Dünger
+
+# BLOCKS #
+tile.oreshrubs:oreshrub.name=Erz Strauch
+tile.oreshrubs:shrubtrap.name=Strauchfalle
+tile.oreshrubs:shrubtrap_witherproof.name=Strauchfalle (Wither geprüft)
+tile.oreshrubs:oreshrub_withered.name=Verwelkter Erz Strauch
+tile.oreshrubs:oreshrub_random.name=Zufalls Strauch
+
+# ENTITIES #
+entity.Villager.oreshrubs.shrub_collector=Strauch-Sammler
+
+# DAMAGE SOURCE #
+death.attack.oreshrub=1$s fiel in einen Erz Strauch. Autsch!
+death.attack.oreshrub.player=%2$s schubste %1$s in einen Erz Strauch.
+death.attack.oreshrub.trap=%1$s wurde von einer Strauch Falle getötet.
+
+# WAILA #
+oreshrubs:waila.info.enchantments=Verzauberungen
+
+# JEI #
+jei.tile.oreshrubs:oreshrub_withered=Du kannst aus einen kleinen Erz Strauch einen verbrannten Erz Strauch machen indem du ihn mit einem Feuerzeug anzündest.
+jei.tile.oreshrubs:shrubtrap=Diese Strauch Falle greift alle Kreaturen an die mit ihm in Berührung kommen. Die Falle hat auch die Chance Schädel und extra Erfahrungspunkte fallen zu lassen, wenn sie mindestens Plünderung I besitzt. Die 'Wither geprüfte'-Falle ist gegen den Explosionsschaden vom Wither Boss immun.
+jei.tile.oreshrubs:oreshrub_random=Du kannst diesen Strauch in einem vergessenen Schrein in der Oberwelt finden, aber sei vorsichtig, einige von ihnen sind gefährlich!
+jei.item.oreshrubs:shrub_fertilizer=Wenn du damit auf einen Erzstrauch rechtsklickst, beschleunigst du sein Wachstum, aber nur wenn das Lichtlevel stimmt. Dies ist aber nicht so effektiv sobald er ausgewachen ist. Der Dünger hat auch den selben Effekt wie Knochenmehl.
+
+# LOOTBAG VARIANTS #
+oreshrubs:lootbag.info.advanced=Fortgeschritten
+oreshrubs:lootbag.info.choose_advanced=Wie eine normale Truhe!
+oreshrubs:lootbag.info.choose_normal=Bekomme 3 zufällige Items!
+oreshrubs:lootbag.info.loot=Beute
+oreshrubs:lootbag.info.contains=Enthält
+

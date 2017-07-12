@@ -1,0 +1,16 @@
+[
+{
+  "modid": "oreshrubs",
+  "name": "Ore Shrubs",
+  "description": "Are you tired of exploring endless caves to find a piece of your favorite ore? With Ore Shrubs you must have never go back in a cave. Just sit down and watch while your ores growing!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Lhykos"],
+  "credits": "Author: Lhykos",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

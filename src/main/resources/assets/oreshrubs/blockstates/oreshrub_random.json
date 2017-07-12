@@ -1,0 +1,23 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+	"model": "oreshrubs:age_3",
+	"textures": {
+	  "particle": "#tex",
+	  "tex": "oreshrubs:blocks/oreshrub",
+	  "berry": "oreshrubs:blocks/ripe_berries"
+	},
+	"transform": "forge:default-block"
+  },
+  "variants": {
+	"age": {
+	  "0": { "model": "oreshrubs:age_0" },
+	  "1": { "model": "oreshrubs:age_1" },
+	  "2": { "model": "oreshrubs:age_2" },
+	  "3": { "model": "oreshrubs:age_3" },
+	  "4": { "submodel": "oreshrubs:ripe_berries" }
+	},
+	"normal":[{}],
+	"inventory":[{}]
+  }
+}

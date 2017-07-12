@@ -1,0 +1,26 @@
+# Exclude All... #
+/*
+
+# ...But Keep Important Stuff #
+
+# Gradle #
+!gradle/
+!gradlew
+!gradlew.bat
+!gradle.properties
+!build.gradle
+
+# Github #
+!.gitignore
+!LICENSE.md
+!README.md
+!Changelog.md
+
+# Source #
+!src/
+src/main/java/lhykos/oreshrubs/*
+!src/main/java/lhykos/oreshrubs/api/
+
+# Mod Specific #
+!custom-shrubs-example/
+!HOWTO-CustomShrubs.md

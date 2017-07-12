@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "oreshrubs:items/lootbag",
+    "layer1": "oreshrubs:items/lootbag_gem"
+  }
+}

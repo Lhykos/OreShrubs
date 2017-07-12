@@ -1,0 +1,50 @@
+{
+  "custom_shrubs": [
+    {
+      "enabled": true,
+      "registry_name": "diamond",
+      "rarity": 5,
+      "crafting_result": {
+        "item_name": "gemDiamond",
+        "crafting_amount": 2,
+        "recipe_pattern": "GEM"
+      },
+      "shrub_color": "0x35e8f2",
+      "berry_color": "0x35e8f2",
+      "growth_chance": 1,
+      "max_harvested_berries": 20,
+      "light_level": 4,
+      "max_growth_light": 15,
+      "generation_settings": {
+        "dimension": 0,
+        "min_generation_height": 15,
+        "max_generation_height": 60,
+        "vein_size": 5,
+        "vein_shape": "NORMAL",
+        "spawn_biomes": [
+          "minecraft:mesa",
+          "minecraft:desert",
+          "minecraft:plains"
+        ]
+      }
+    },
+    {
+      "enabled": true,
+      "registry_name": "command_block",
+      "rarity": 5,
+      "crafting_result": {
+        "item_name": "minecraft:command_block",
+        "crafting_amount": 22,
+        "custom_recipe_pattern": [ "S*#", "#*S", "S#*" ]
+      },
+      "shrub_color": "7527324",
+      "berry_color": "16777215",
+      "growth_chance": 20,
+      "max_harvested_berries": 32,
+      "light_level": 15,
+      "max_growth_light": 15,
+      "growth_block": "minecraft:obsidian",
+      "generation_settings": {}
+    }
+  ]
+}

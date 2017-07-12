@@ -1,0 +1,16 @@
+{
+    "elements": [
+        {
+            "from": [ 1.0, 0.0, 1.0 ], 
+            "to": [ 15.0, 14.0, 15.0 ],
+            "faces": {
+                "north": { "texture": "#tex", "tintindex": 3, "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "east": { "texture": "#tex", "tintindex": 3, "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "south": { "texture": "#tex", "tintindex": 3, "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "west": { "texture": "#tex", "tintindex": 3, "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "up": { "texture": "#tex", "tintindex": 3, "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "texture": "#tex", "tintindex": 3, "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        }
+    ]
+}
