@@ -1,0 +1,30 @@
+{
+  "group": "shrub_fertilizer",
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "oreshrubs:recipe_enabled",
+      "name": "shrub_fertilizer"
+    }
+  ],
+  "pattern": [
+    "MSM",
+    "SBS",
+    "MSM"
+  ],
+  "key": {
+    "S": {
+      "item": "oreshrubs:oreshrub_withered"
+    },
+    "M": {
+      "item": "minecraft:dye",
+      "data": 15
+    },
+    "B": {
+      "item": "oreshrubs:empty_bag"
+    }
+  },
+  "result": {
+    "item": "oreshrubs:shrub_fertilizer"
+  }
+}

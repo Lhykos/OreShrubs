@@ -1,0 +1,44 @@
+{
+  "group": "shrubtrap",
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "oreshrubs:recipe_enabled",
+      "name": "shrub_trap"
+    }
+  ],
+  "pattern": [
+    "RPR",
+    "PWP",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "oreshrubs:oreshrub_withered"
+    },
+    "P": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "R": [
+      {
+        "type": "minecraft:item_nbt",
+        "item": "oreshrubs:oreberries",
+        "nbt": {
+          "OreShrubVariant": {
+            "Name": "experience"
+          }
+        }
+      },
+      {
+        "item": "oreshrubs:oreberries_random"
+      }
+    ],
+    "W": {
+      "item": "minecraft:skull",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "oreshrubs:shrubtrap"
+  }
+}

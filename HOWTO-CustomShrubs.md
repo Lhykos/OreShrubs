@@ -78,7 +78,7 @@ You can use this characters to define the recipe:
 
 - **\*** - For normal ore berries.
 - **#** - For compressed ore berries.
-- **S** - For the 'growth_block' of this shrub. If this is not set it will take stone.
+- **S** - For the 'growth_block' of this shrub. If this is not set the shrub can be placed on every solid block.
 
 If you are not sure what I meant, look in the examples.
 

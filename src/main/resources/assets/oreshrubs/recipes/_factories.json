@@ -1,0 +1,9 @@
+{
+  "conditions": {
+    "recipe_enabled": "lhykos.oreshrubs.common.registry.RecipeFactory$DisabledRecipeFactory",
+    "berry_variant_enabled": "lhykos.oreshrubs.common.registry.RecipeFactory$EnabledVariantFactory"
+  },
+  "ingredients": {
+    "nbt_item": "lhykos.oreshrubs.common.registry.RecipeFactory$IngredientNBTFactory"
+  }
+}

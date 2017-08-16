@@ -1,0 +1,40 @@
+{
+  "group": "experience_bottle",
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "oreshrubs:recipe_enabled",
+      "name": "exp_bottle"
+    }
+  ],
+  "pattern": [
+    "B B",
+    " W ",
+    "   "
+  ],
+  "key": {
+    "W": [
+      {
+        "type": "minecraft:item_nbt",
+        "item": "minecraft:potion",
+        "nbt": {
+          "Potion": "minecraft:water"
+        }
+      }
+    ],
+    "B": [
+      {
+        "type": "minecraft:item_nbt",
+        "item": "oreshrubs:oreberries",
+        "nbt": {
+          "OreShrubVariant": {
+            "Name": "experience"
+          }
+        }
+      }
+    ]
+  },
+  "result": {
+    "item": "minecraft:experience_bottle"
+  }
+}

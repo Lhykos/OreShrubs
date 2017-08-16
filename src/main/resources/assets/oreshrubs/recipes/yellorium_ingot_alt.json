@@ -1,0 +1,44 @@
+{
+  "group": "berries",
+  "type": "forge:ore_shaped",
+  "conditions": [
+    {
+      "type": "oreshrubs:recipe_enabled",
+      "name": "yellorium_ingot_alt"
+    },
+    {
+      "type": "oreshrubs:berry_variant_enabled",
+      "variant" : "uranium"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "bigreactors"
+    }
+  ],
+  "pattern": [
+    "BBB",
+    "BGB",
+    "BBB"
+  ],
+  "key": {
+    "B": [
+      {
+        "type": "minecraft:item_nbt",
+        "item": "oreshrubs:oreberries",
+        "nbt": {
+          "OreShrubVariant": {
+            "Name": "uranium"
+          }
+        }
+      }
+    ],
+    "G": {
+        "type": "forge:ore_dict",
+        "ore": "ingotGraphite"
+      }
+  },
+  "result": {
+    "item": "bigreactors:ingotMetals",
+    "data": 0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "group": "shrubtrap",
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "oreshrubs:recipe_enabled",
+      "name" : "shrub_trap_witherproof"
+    }
+  ],
+  "pattern": [
+    "OWO",
+    "WIW",
+    "OWO"
+  ],
+  "key": {
+    "I": {
+      "item": "oreshrubs:shrubtrap"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "W": {
+      "item": "minecraft:skull",
+      "data": 1
+    }
+  },
+  "result": {
+    "item": "oreshrubs:shrubtrap_witherproof"
+  }
+}

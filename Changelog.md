@@ -1,5 +1,11 @@
+# 1.12
+# OreShrubs - 1.4.0
+- Updated to 1.12. Could contain bugs!
+- The Shrub-Collector Villager can now go out of his house.
+- The Shrub-Collector Villager now have more balanced offers and less duplicates.
+
 # 1.11.2
-# OreShrubs - 1.3.3 #
+# OreShrubs - 1.3.3
 - Some mobs have now a chance to drop a LootBag.
   - The EnderDragon and the Wither always drop a advanced LootBag.
 
