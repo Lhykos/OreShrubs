@@ -11,6 +11,10 @@ package lhykos.oreshrubs.api.oreshrub;
 
 import net.minecraft.item.ItemStack;
 
+/**
+ * @deprecated Use one of the clearer versions: {@link OreDictResult} or {@link ItemStackResult}
+ */
+@Deprecated
 public class CraftingResult
 {
 	/**
@@ -38,13 +42,6 @@ public class CraftingResult
 		this(itemName, 0, 1, OreDictPrefix.UNDEFINED, customRecipePattern);
 	}
 
-	public CraftingResult(ItemStack resultStack, OreDictPrefix oreDictPrefix, String... customRecipePattern)
-	{
-		this.resultStack = resultStack;
-		this.oreDictPrefix = oreDictPrefix;
-		this.customRecipePattern = customRecipePattern;
-	}
-
 	/**
 	 * @param itemName				Can be a {@link net.minecraft.util.ResourceLocation} or a OreDictionary-Name.
 	 * @param itemMeta				The metadata of the crafting result.
@@ -64,6 +61,13 @@ public class CraftingResult
 		this.oreDictPrefix = oreDictPrefix;
 		this.customRecipePattern = customRecipePattern;
 		this.craftingAmount = Math.min(craftingAmount, 64);
+	}
+
+	public CraftingResult(ItemStack resultStack, OreDictPrefix oreDictPrefix, String... customRecipePattern)
+	{
+		this.resultStack = resultStack;
+		this.oreDictPrefix = oreDictPrefix;
+		this.customRecipePattern = customRecipePattern;
 	}
 
 	/**

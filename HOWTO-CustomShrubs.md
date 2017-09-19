@@ -45,42 +45,41 @@ The block on which the shrub can be placed and generated. If this is not set, it
 You can use a resource location for it.
 
 
-## CraftingResult
-If you set this element the berries from your shrub can be used for crafting.
-E.g. Berries to a ore nugget.
+## OreDictResult
+Use this if you want to register a output material for the berries with the ore dictionary.
 
-### item_name
-The material that is crafted from the berries.
-
-You can either use a OreDictionary-Name (e.g. "gemDiamond") or a ResourceLocation. (e.g. "minecraft:diamond")
-
-### item_meta
-The meta data of the item you want to use. (Default: 0)
-
-It's only needed if you use a resource location.
+### oredict_name
+The name in the ore dictionary, e.g. "ingotGold".
 
 ### crafting_amount
-How many items you will get from crafting. (Default: 1)
+The amount of items you get from the crafting.
+
+### register_ore_recipe
+If set to true you can craft the ore out of this material. (As long as it exists.)
 
 ### recipe_pattern
-Here you can set a pre-defined recipe pattern. (Default: UNDEFINED)
-
-You can use: [DUST, GEM, NUGGET, INGOT, ORE, UNDEFINED]
-
-If you set "UNDEFINED", it will try to set a recipe. (This only work if the *item_name* is a OreDictionary-Name)
-
-### custom_recipe_pattern
-This is a array where you can define your own recipe pattern. (Default: Not set.)
-
-If this is set, the result of *recipe_pattern* is ignored. You must define it in a valid shape like: ["###", "###", "###"].
-
+The recipe pattern for the crafting.
 You can use this characters to define the recipe:
 
-- **\*** - For normal ore berries.
+- '*' - For normal ore berries.
 - **#** - For compressed ore berries.
 - **S** - For the 'growth_block' of this shrub. If this is not set the shrub can be placed on every solid block.
 
-If you are not sure what I meant, look in the examples.
+
+## ItemStackResult
+Use this if you want to register a output material for the berries and want to take a item directly.
+
+### item_name
+The name of the item. You should always use the mod prefix: e.g. minecraft:gold_ingot
+
+### item_meta
+The metadata for the item.
+
+### crafting_amount
+The amount of items you get from the crafting.
+
+### recipe_pattern
+See OreDictResult.
 
 
 ## Generation Settings

@@ -46,6 +46,9 @@ jei.tile.oreshrubs:shrubtrap=This shrub trap damages all entities that comes in 
 jei.tile.oreshrubs:oreshrub_random=You can find this shrub in a forgotten shrine which can be found in the overworld. You will recognize them if you see them, but be careful, some of these are dangerous.
 jei.item.oreshrubs:shrub_fertilizer=Right click a shrub to speed up it's growth, but only if the light level is acceptable. It's not that effective when the shrub is fully grown. It has the same effect as Bonemeal, too.
 
+# TCONSTRUCT #
+material.randomberries.name=Random Berries
+
 # LOOTBAG VARIANTS #
 oreshrubs:lootbag.info.advanced=Advanced
 oreshrubs:lootbag.info.choose_advanced=Like a normal chest!

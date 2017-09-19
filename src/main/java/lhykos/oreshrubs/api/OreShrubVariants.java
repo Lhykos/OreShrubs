@@ -24,6 +24,12 @@ public class OreShrubVariants
 	public static OreShrubVariant QUARTZ;
 
 	/**
+	 * @since 0.2
+	 */
+	public static OreShrubVariant EMERALD;
+	public static OreShrubVariant GLOWSTONE;
+
+	/**
 	 * Multiple Mods
 	 */
 	public static OreShrubVariant COPPER;
@@ -39,20 +45,24 @@ public class OreShrubVariants
 	/**
 	 * Draconic Evolution
 	 */
+	@Deprecated
 	public static OreShrubVariant DRACONIUM;
 
 	/**
 	 * Applied Energistics 2
 	 */
+	@Deprecated
 	public static OreShrubVariant CERTUS_QUARTZ;
 
 	/**
 	 * Actually Additions
 	 */
+	@Deprecated
 	public static OreShrubVariant BLACK_QUARTZ;
 
 	/**
 	 * Evilcraft
 	 */
+	@Deprecated
 	public static OreShrubVariant DARK_GEM;
 }

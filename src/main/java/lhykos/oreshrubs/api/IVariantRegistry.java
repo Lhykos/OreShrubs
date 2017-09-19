@@ -15,28 +15,36 @@ import java.util.Random;
 public interface IVariantRegistry<T>
 {
 	/**
-	 * Register a lootbag.
+	 * Register a variant.
+	 * @deprecated Use 'preRegister* instead!
 	 */
+	@Deprecated
 	void register(T variant);
 
 	/**
-	 * Remove a lootbag from the registry.
+	 * Register a variant.
+	 * @since 0.2
+	 */
+	void preRegister(T variant);
+
+	/**
+	 * Remove a variant from the registry.
 	 */
 	void remove(T variant);
 
 	/**
-	 * Replace a lootbag in the registry.
+	 * Replace a variant in the registry.
 	 * The registry names will be compared for the replacement!
 	 */
 	void replace(T replacementVariant);
 
 	/**
-	 * Get a lootbag from it's registryName.
+	 * Get a variant from it's registryName.
 	 */
 	T getFromRegistryName(String registryName);
 
 	/**
-	 * Get a random lootbag from all registered variants.
+	 * Get a random variant from all registered variants.
 	 */
 	T getRandom(Random random);
 

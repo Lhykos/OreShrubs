@@ -1,4 +1,25 @@
 # 1.12
+# OreShrubs - 1.4.1
+- Removed ore shrub configuration from the config file.
+- Removed 'custom-shrubs' directory from config directory.
+  - All ore shrubs are now registered in the new 'shrubs' directory.
+  - 'ModRegister.cfg' are removed. 
+  - All valid oreshrubs will be registered in that directory as json files.
+- All ores that are supported from my mod can now be configured by json.
+  - A 'shrubs' directory in the config directory is created after the first start of Minecraft.
+- LootBags can now also be configured with json files!
+  - It's also possible to add custom loot bags.
+- Shrubs don't hurt the player anymore if he is wearing at least one piece of armor.
+- Tinker's Construct support for ore berries and ore shrubs!
+- FIX: Cobalt and Ardite shrubs are not enabled.
+- FIX: Game crashes on world load (1.12.1)
+- API: The API has changed to version 0.2!
+  - See changelog file!
+- **Removed mod compatibility for: EvilCraft, ActuallyAdditions, DraconicEvolution and AppliedEnergistics**
+  - I just want to support the common ores for the shrubs and after the mod has it's API, other mod authors can easily implement their own variants.
+- Added ore support for Emerald(Can be found in extreme hills) and Glowstone(Only generate near glowstone blocks in the nether)
+- Shrubs are now much rarer and some of them can only be found in certain biomes or dimensions!
+  
 # OreShrubs - 1.4.0
 - Updated to 1.12. Could contain bugs!
 - The Shrub-Collector Villager can now go out of his house.

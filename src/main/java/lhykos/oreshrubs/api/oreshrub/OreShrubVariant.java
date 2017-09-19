@@ -10,6 +10,7 @@
 package lhykos.oreshrubs.api.oreshrub;
 
 import lhykos.oreshrubs.api.IRegistryName;
+import lhykos.oreshrubs.api.IShrubVariantInteraction;
 import lhykos.oreshrubs.api.damagesource.DamageSourceOreShrubs;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
@@ -21,14 +22,18 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
+import java.util.ArrayList;
+import java.util.List;
 
 
-public class OreShrubVariant implements IRegistryName
+public class OreShrubVariant implements IRegistryName, IShrubVariantInteraction
 {
     private boolean isEnabled = true;
     private String customDisplayName;
     private String registryName;
+    @Deprecated
     private CraftingResult craftingResult = CraftingResult.EMPTY;
+    private IOreBerryCrafting oreBerryCrafting;
     private GenerationSettings generationSettings = GenerationSettings.EMPTY;
     private IBlockState blockToGrow;
     private int shrubColor;
@@ -66,14 +71,7 @@ public class OreShrubVariant implements IRegistryName
         this.setMaxGrowthLight(maxGrowthLight);
     }
 
-    /**
-     * The action that should execute if a entity collides with the ore shrub.
-     *
-     * @param world		The World.
-     * @param pos		The BlockPos of the shrub.
-     * @param state		The IBlockState of the shrub.
-     * @param entity	The Entity that collides with this shrub.
-     */
+    @Override
     public void onCollide(World world, BlockPos pos, IBlockState state, Entity entity)
     {
         if(entity instanceof EntityLivingBase)
@@ -82,17 +80,8 @@ public class OreShrubVariant implements IRegistryName
         }
     }
 
-    /**
-     * The action that should execute if a player right click with the berries that
-     * correspondent with this ore shrub.
-     *
-     * @param stack		The OreBerries-Stack.
-     * @param world		The World.
-     * @param player	The player that right clicks with the berries.
-     *
-     * @return          The amount of berries that are consumed.
-     */
-    public int onConsumeBerries(ItemStack stack, World world, EntityPlayer player, EnumHand hand)
+    @Override
+    public int consumeBerries(ItemStack stack, World world, EntityPlayer player, EnumHand hand)
     {
         return 0;
     }
@@ -157,6 +146,7 @@ public class OreShrubVariant implements IRegistryName
         return this;
     }
 
+    @Nullable
     public IBlockState getBlockToGrow()
     {
         return blockToGrow;
@@ -165,16 +155,39 @@ public class OreShrubVariant implements IRegistryName
     /**
      * Set the crafting result from the berries.
      * @see CraftingResult
+     * @deprecated See {@link OreDictResult} or {@link ItemStackResult}
      */
+    @Deprecated
     public OreShrubVariant setCraftingResult(CraftingResult craftingResult)
     {
         this.craftingResult = craftingResult;
         return this;
     }
 
+    /**
+     * Set a crafting output and a recipe for the ore berries of this shrub.
+     * If set to null, the berries of this shrub have no crafting recipe.
+     * @since 0.2
+     */
+    public OreShrubVariant setOreBerryCrafting(@Nullable IOreBerryCrafting oreBerryCrafting)
+    {
+        this.oreBerryCrafting = oreBerryCrafting;
+        return this;
+    }
+
+    @Deprecated
     public CraftingResult getCraftingResult()
     {
         return craftingResult;
+    }
+
+    /**
+     * @since 0.2
+     */
+    @Nullable
+    public IOreBerryCrafting getOreBerryCrafting()
+    {
+        return oreBerryCrafting;
     }
 
     /**
@@ -196,14 +209,18 @@ public class OreShrubVariant implements IRegistryName
     /**
      * The color of the ripe berries on the shrub.
      * This is normally the same color as the Berries has.
+     *
+     * @deprecated Will now use the berry color instead this!
+     * Use 'getBerryColor'.
      */
+    @Deprecated
     public int getRipeBerryColor()
     {
         return getBerryColor();
     }
 
     /**
-     * Set the generation settings for this lootbag. Allow them to generate in the world.
+     * Set the generation settings for this ore shrub. Allow them to generate in the world.
      * Return 'GenerationSettings.EMPTY' to not allow them to generate.
      * @see GenerationSettings
      */
@@ -219,7 +236,7 @@ public class OreShrubVariant implements IRegistryName
     }
 
     /**
-     * Simplified call to check if this lootbag can be generated.
+     * Simplified call to check if this ore shrub can be generated.
      */
     public boolean canGenerateShrubs()
     {
@@ -227,7 +244,7 @@ public class OreShrubVariant implements IRegistryName
     }
 
     /**
-     * Set custom display name for this lootbag.
+     * Set a custom display name for this variant.
      * You should set this if you have a empty {@link CraftingResult}.
      * Otherwise the shrub block will just named 'Ore Shrub'.
      */
@@ -280,8 +297,20 @@ public class OreShrubVariant implements IRegistryName
     /**
      * Return true if this shrub can be configured via the config file.
      * For custom shrubs, it's set to false!
+     *
+     * @deprecated Has simply no use anymore and will be removed soon!
      */
+    @Deprecated
     public boolean isConfigurable()
+    {
+        return true;
+    }
+
+    /**
+     * If the variant can be serialized and can modified by players over the config.
+     * @since 0.2
+     */
+    public boolean isSerializable()
     {
         return true;
     }

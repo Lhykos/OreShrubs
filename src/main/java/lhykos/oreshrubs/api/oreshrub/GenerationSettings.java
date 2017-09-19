@@ -9,12 +9,16 @@
  */
 package lhykos.oreshrubs.api.oreshrub;
 
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.gen.IChunkGenerator;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
-public class GenerationSettings
+public class GenerationSettings implements IShrubVariantGeneration
 {
 	/**
 	 * A empty version for ore shrubs that can't be generated.
@@ -93,6 +97,12 @@ public class GenerationSettings
 	public int getDensity()
 	{
 		return this.density;
+	}
+
+	@Override
+	public boolean canGenerateHere(World world, Random random, IChunkGenerator chunkGenerator, BlockPos pos)
+	{
+		return getSpawnBiomes().size() == 0 || getSpawnBiomes().stream().anyMatch((biome) -> biome == world.getBiome(pos));
 	}
 }
 
