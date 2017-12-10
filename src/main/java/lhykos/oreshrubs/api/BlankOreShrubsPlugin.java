@@ -9,19 +9,27 @@
  */
 package lhykos.oreshrubs.api;
 
-import lhykos.oreshrubs.api.oreshrub.OreShrubVariant;
 import lhykos.oreshrubs.api.lootbag.LootBagVariant;
+import lhykos.oreshrubs.api.oreshrub.OreShrubVariant;
 
 /**
  * A base implementation of the {@link IOreShrubsPlugin}.
  * Extend your plugin from this base to avoid implementing methods you don't need.
- * Your mod still mus have the {@link OreShrubsPlugin} annotation to ger recognised by OreShrubs.
+ * Your mod still mus have the {@link OreShrubsPlugin} annotation to get recognised by OreShrubs.
  */
 public abstract class BlankOreShrubsPlugin implements IOreShrubsPlugin
 {
+	@Deprecated
 	@Override
 	public void registerOreShrubs(IVariantRegistry<OreShrubVariant> oreShrubRegistry, IShrubHelper shrubHelper) {}
 
+	@Deprecated
 	@Override
 	public void registerLootBags(IVariantRegistry<LootBagVariant> lootBagRegistry, ILootBagHelper lootBagHelper) {}
+
+	@Override
+	public void registerOreShrubs(IVariantRegistry<OreShrubVariant> oreShrubRegistry) {}
+
+	@Override
+	public void registerLootBags(IVariantRegistry<LootBagVariant> lootBagRegistry) {}
 }

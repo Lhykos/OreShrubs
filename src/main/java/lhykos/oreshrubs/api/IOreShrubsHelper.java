@@ -13,6 +13,7 @@ package lhykos.oreshrubs.api;
  * Provides some helper methods and tools for OreShrubs.
  * Get the instance from {@link IOreShrubsPlugin}
  */
+@Deprecated
 public interface IOreShrubsHelper
 {
 	/**

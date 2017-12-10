@@ -9,8 +9,8 @@
  */
 package lhykos.oreshrubs.api;
 
-import lhykos.oreshrubs.api.oreshrub.OreShrubVariant;
 import lhykos.oreshrubs.api.lootbag.LootBagVariant;
+import lhykos.oreshrubs.api.oreshrub.OreShrubVariant;
 
 /**
  * This is main class to implement to create a OreShrubs plugin.
@@ -24,12 +24,32 @@ public interface IOreShrubsPlugin
 	/**
 	 * To register, replace or remove a OreShrubVariant you should use this registry.
 	 * It also provide a class to get access to some helper methods and tools.
+	 *
+	 * @deprecated Use simplified version below!
+	 * The helper can now be accessed from {@link OreShrubsAPI} directly.
 	 */
+	@Deprecated
 	void registerOreShrubs(IVariantRegistry<OreShrubVariant> oreShrubRegistry, IShrubHelper shrubHelper);
 
 	/**
 	 * To register, replace or remove a LootBagVariant you should use this registry.
 	 * It also provide a class to get access to some helper methods and tools.
+	 *
+	 * @deprecated Use simplified version below!
+	 * The helper can now be accessed from {@link OreShrubsAPI} directly.
 	 */
+	@Deprecated
 	void registerLootBags(IVariantRegistry<LootBagVariant> lootBagRegistry, ILootBagHelper lootBagHelper);
+
+	/**
+	 * To register, replace or remove a OreShrubVariant you should use this registry.
+	 * @since 0.3
+	 */
+	void registerOreShrubs(IVariantRegistry<OreShrubVariant> oreShrubRegistry);
+
+	/**
+	 * To register, replace or remove a LootBagVariant you should use this registry.
+	 * @since 0.3
+	 */
+	void registerLootBags(IVariantRegistry<LootBagVariant> lootBagRegistry);
 }

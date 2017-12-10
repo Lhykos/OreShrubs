@@ -22,8 +22,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class OreShrubVariant implements IRegistryName, IShrubVariantInteraction
@@ -31,8 +29,6 @@ public class OreShrubVariant implements IRegistryName, IShrubVariantInteraction
     private boolean isEnabled = true;
     private String customDisplayName;
     private String registryName;
-    @Deprecated
-    private CraftingResult craftingResult = CraftingResult.EMPTY;
     private IOreBerryCrafting oreBerryCrafting;
     private GenerationSettings generationSettings = GenerationSettings.EMPTY;
     private IBlockState blockToGrow;
@@ -153,18 +149,6 @@ public class OreShrubVariant implements IRegistryName, IShrubVariantInteraction
     }
 
     /**
-     * Set the crafting result from the berries.
-     * @see CraftingResult
-     * @deprecated See {@link OreDictResult} or {@link ItemStackResult}
-     */
-    @Deprecated
-    public OreShrubVariant setCraftingResult(CraftingResult craftingResult)
-    {
-        this.craftingResult = craftingResult;
-        return this;
-    }
-
-    /**
      * Set a crafting output and a recipe for the ore berries of this shrub.
      * If set to null, the berries of this shrub have no crafting recipe.
      * @since 0.2
@@ -173,12 +157,6 @@ public class OreShrubVariant implements IRegistryName, IShrubVariantInteraction
     {
         this.oreBerryCrafting = oreBerryCrafting;
         return this;
-    }
-
-    @Deprecated
-    public CraftingResult getCraftingResult()
-    {
-        return craftingResult;
     }
 
     /**
@@ -207,19 +185,6 @@ public class OreShrubVariant implements IRegistryName, IShrubVariantInteraction
     }
 
     /**
-     * The color of the ripe berries on the shrub.
-     * This is normally the same color as the Berries has.
-     *
-     * @deprecated Will now use the berry color instead this!
-     * Use 'getBerryColor'.
-     */
-    @Deprecated
-    public int getRipeBerryColor()
-    {
-        return getBerryColor();
-    }
-
-    /**
      * Set the generation settings for this ore shrub. Allow them to generate in the world.
      * Return 'GenerationSettings.EMPTY' to not allow them to generate.
      * @see GenerationSettings
@@ -245,7 +210,6 @@ public class OreShrubVariant implements IRegistryName, IShrubVariantInteraction
 
     /**
      * Set a custom display name for this variant.
-     * You should set this if you have a empty {@link CraftingResult}.
      * Otherwise the shrub block will just named 'Ore Shrub'.
      */
     public OreShrubVariant setCustomDisplayName(String displayName)
@@ -292,18 +256,6 @@ public class OreShrubVariant implements IRegistryName, IShrubVariantInteraction
     public int getRarity()
     {
         return this.rarity;
-    }
-
-    /**
-     * Return true if this shrub can be configured via the config file.
-     * For custom shrubs, it's set to false!
-     *
-     * @deprecated Has simply no use anymore and will be removed soon!
-     */
-    @Deprecated
-    public boolean isConfigurable()
-    {
-        return true;
     }
 
     /**

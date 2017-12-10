@@ -16,13 +16,6 @@ public interface IVariantRegistry<T>
 {
 	/**
 	 * Register a variant.
-	 * @deprecated Use 'preRegister* instead!
-	 */
-	@Deprecated
-	void register(T variant);
-
-	/**
-	 * Register a variant.
 	 * @since 0.2
 	 */
 	void preRegister(T variant);

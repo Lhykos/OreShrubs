@@ -41,28 +41,4 @@ public class OreShrubVariants
 	public static OreShrubVariant TIN;
 	public static OreShrubVariant COBALT;
 	public static OreShrubVariant ARDITE;
-
-	/**
-	 * Draconic Evolution
-	 */
-	@Deprecated
-	public static OreShrubVariant DRACONIUM;
-
-	/**
-	 * Applied Energistics 2
-	 */
-	@Deprecated
-	public static OreShrubVariant CERTUS_QUARTZ;
-
-	/**
-	 * Actually Additions
-	 */
-	@Deprecated
-	public static OreShrubVariant BLACK_QUARTZ;
-
-	/**
-	 * Evilcraft
-	 */
-	@Deprecated
-	public static OreShrubVariant DARK_GEM;
 }
