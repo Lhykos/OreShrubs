@@ -1,9 +1,12 @@
 # 1.12
-#OreShrubs - 1.4.2
+# OreShrubs - 1.4.3
+- FIX #18: Empty loot bag spawns a gold shrub.
+
+# OreShrubs - 1.4.2
 - Some API-Changes. See the API-Changelog for more.
 - Updated to forge version: *14.23.1.2562*
-- FIX #14: Shrub Collector house always rotated away from path
-- FIX: Only 'Compressed GoldOreBerries' can be crafted.
+- FIX #14: Shrub Collector house always rotated away from path.
+- FIX: Only 'Compressed Gold OreBerries' can be crafted.
 
 # OreShrubs - 1.4.1
 - Removed ore shrub configuration from the config file.
