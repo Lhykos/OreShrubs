@@ -1,0 +1,29 @@
+{
+  "__comment": "A ItemStackResult example.",
+  "enabled": true,
+  "registry_name": "ender_pearl",
+  "rarity": 7,
+  "shrub_color": 944995,
+  "berry_color": 944995,
+  "growth_chance": 20,
+  "max_harvested_berries": 4,
+  "light_level": 1,
+  "max_growth_light": 9,
+  "generation_settings": {
+    "dimension": -1,
+    "density": 1,
+    "min_generation_height": 15,
+    "max_generation_height": 128,
+    "vein_size": 3,
+    "vein_shape": "PILLAR_UP",
+    "spawn_biomes": []
+  },
+  "itemstack_result": {
+    "item_name": "minecraft:ender_pearl",
+    "crafting_amount": 4,
+    "recipe_pattern": [
+      "***",
+      "***"
+    ]
+  }
+}

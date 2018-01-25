@@ -1,4 +1,8 @@
 # 1.12
+# OreShrubs - 1.4.4
+- FIX #20: Custom shrubs made with 'ItemStackResult' are not registered.
+- Added three custom shrubs examples to GitHub.
+
 # OreShrubs - 1.4.3
 - FIX #18: Empty loot bag spawns a gold shrub.
 

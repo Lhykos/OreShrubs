@@ -1,0 +1,22 @@
+{
+  "__comment": "A 'no output' example.",
+  "enabled": true,
+  "registry_name": "experience",
+  "custom_display_name": "oreshrubs:variant.experience",
+  "rarity": 10,
+  "shrub_color": 6880768,
+  "berry_color": 6880768,
+  "growth_chance": 15,
+  "max_harvested_berries": 4,
+  "light_level": 3,
+  "max_growth_light": 10,
+  "generation_settings": {
+    "dimension": 0,
+    "density": 1,
+    "min_generation_height": 1,
+    "max_generation_height": 30,
+    "vein_size": 4,
+    "vein_shape": "NORMAL",
+    "spawn_biomes": []
+  }
+}
