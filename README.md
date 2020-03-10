@@ -1,3 +1,6 @@
+### This project will be discontinued. Sorry!
+### I work on a similar project: Aes Frutex. Updates are coming soon!
+
 # OreShrubs [![Curse Forge](http://cf.way2muchnoise.eu/full_263884_downloads.svg)](https://minecraft.curseforge.com/projects/ore-shrubs) [![Curse Forge](http://cf.way2muchnoise.eu/versions/263884.svg)](https://minecraft.curseforge.com/projects/ore-shrubs)
 
 For more information about this mod visit it on [Curse][1] or in the [Minecraft Forum][2].
